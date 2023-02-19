@@ -1,0 +1,38 @@
+body{  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    background-color: #ADD8E6;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left:2%;
+    align-items:center;
+    display: flex;
+} 
+h1{
+  color:brown;
+
+}
+.main{
+  background:lightsteelblue;
+  padding: 40px;
+}
+form
+{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    color:crimson;
+}
+input[type=text], input[type=password]{  
+  width: 60%;  
+  padding: 5px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+  background-color: bisque;
+}  
+select{
+  width: 110px;
+  background-color: bisque;
+}

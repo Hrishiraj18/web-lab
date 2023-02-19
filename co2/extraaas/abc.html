@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>
+        MC
+    </title>
+    <script>
+        console.log("The converted currency is "+ convertToCurrency(moneyCurrency, currencysys + ".");
+
+
+function convertCurrency(currency, currencySystem) {...
+
+
+var currencies = {
+    usd: {
+        conversion: 1,
+    },
+    eur: {
+        conversion: .89
+    },
+    ...
+};
+
+function convertCurrency(fromCurrency, toCurrency, amount) {
+
+    // ... not the best at thinking of the algorithm. Suggestions?
+    // perhaps normalize fromCurrency to the dollar, then convert to toCurrency since I believe the dollar is the base/universal currency
+};
+
+var convertedCurrency = convertCurrency("USD", "EUR", 20.50);
+
+alert("The converted amount is" + convertedCurrency);
+
+
+'use strict';
+let amount = Number(prompt("How much money do you have?."));
+let currentCurrency = prompt("What currency are you using?");
+let desiredCurrency = prompt("What currency do you want to convert it to? EUR, JPY, GBP, USD, or  BRL");
+
+var currencyRates = {
+    "USD": 1,
+  "EUR": .8,
+  "JPY": .7,
+  "XXX": 5
+};
+
+function convertCurrency(currentCurrency, desiredCurrency, amount) {
+  var currentRate = currencyRates[currentCurrency];
+  var desiredRate = currencyRates[desiredCurrency];
+
+  var USDAmount = amount * currentRate;
+  var convertedAmount = USDAmount / desiredRate;
+
+  return convertedAmount; // I think this is the right algorithm :/
+}
+
+
+
+var convertedCurrencyAmount = convertCurrency(currentCurrency, desiredCurrency, amount);
+
+alert ("Converted: " + convertedCurrencyAmount);
+    </script>
+<body>
+
+        <h2>abc</h2>
+    <p id="sasi"></p>
+    <script>
+    document.getElementById("sasi").innerHTML = 5 + 6;
+    </script>
+</body>
+</head>
+</html>
+

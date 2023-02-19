@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form >
+        <div class="container">
+            <h1>Registration Form</h1>
+            Name: <br>
+            <input type="text" id="name"> <br>
+            Phone: <br>
+            <input type="text" name="phone" id="phone" value="+91 " required> <br>
+            Age: <br>
+            <input type="text" name="age" id="age"><br>
+            <div id="gender">
+            Gender:
+            <input type="radio" name="Gender" id="male">Male
+            <input type="radio" name="Gender" id="Femlae">Female
+            <input type="radio" name="Gender" id="Other">Other <br>
+            </div>
+            Course:
+            <select name="course" id="course">
+                <option value="Select">Select</option>
+                <option value="MCA">MCA</option>
+                <option value="BCA">BCA</option>
+                <option value="Msc">Msc</option>
+                <option value="Bsc">Bsc</option>
+                <option value="BBA">BBA</option>
+                <option value="MBA">MBA</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="B.Tech">B.Tech</option>
+            </select> <br>
+            Email: <br>
+            <input type="email" name="email" id="email"> <br>
+            Address: <br>
+            <textarea name="address" id="address" cols="50" rows="3"></textarea><br>
+            <input type="submit" value="Submit" id="submit">
+        </div>
+
+    </form>
+    
+</body>
+</html>
