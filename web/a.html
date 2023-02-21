@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<title>Test Project</title>
+<style>
+    .x{
+        visibility:hidden;
+        color:red;
+    }
+</style>
+</head>
+<body>
+<form method="POST">
+Email<br>
+<input type="text" name="email" id="email"><br>
+<span id="emailErr" class="x">Please enter email</span>
+<br>
+Password<br>
+<input type="password" name="password" id="password" > <br>
+<span id="passwordErr" class="x">Please enter password</span> <br>
+<input type="submit" value="Click me" id="btn" name="submit">
+</form>
+<script>
+
+	const emailInpt = document.getElementById("email");
+	const passwordInpt = document.getElementById("password");
+	const btn = document.getElementById("btn");
+	const emailErr = document.getElementById("emailErr");
+	const passwordErr = document.getElementById("passwordErr");
+
+	btn.addEventListener("click",function(e){
+		console.log("clicked!");
+		let isErr = false;
+
+		if(!emailInpt.value){
+			document.getElementById("emailErr").style.visibility="visible"
+			isErr = true;
+		}
+		if(!passwordInpt.value){
+			passwordErr.textContent = "Please enter a password!";
+			isErr = true;
+		}
+		if(isErr){
+			e.preventDefault();
+		}
+        if(!isErr)
+        {
+            body.style.backgroundColor="red";
+        }
+		
+	});
+	
+</script>
+</body>
+</html>

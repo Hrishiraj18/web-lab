@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="booking.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var name=document.myform.name.value;
+            var con=document.myform.contact.value;
+            var boa=document.myform.boarding.value;
+            var email=document.myform.email.value;
+            if (name==null || name==""){  
+            alert("Name can't be blank");  
+            return false;  
+            }
+            if (con==null || con==""){  
+            alert("contact can't be blank");  
+            return false;  
+            }
+            if (boa==null || boa==""){  
+            alert("boarding can't be blank");  
+            return false;  
+            }
+            if (email==null || email==""){  
+            alert("email can't be blank");  
+            return false;  
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form action="a.php" method="POST" name="myform" onclick="return validate()">
+        <div class="cont">
+        <h1><u>VOLVO BUS BOOKING</u></h1>
+        Name:
+        <input type="text" name="name" id="name" required><br>
+        Contact:
+        <input type="text" name="contact" id="contact"><br><br>
+        Boarding:
+        <input type="text" name="boarding" id="boarding"><br><br>
+        E-mail:
+        <input type="text" name="email" id="email"><br><br>
+        Select seats:
+        <select name="seat" id="seat">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+
+        </select><br><br>
+        <input type="submit" value="submit" name="submit" class="registerbtn" id="btn">
+    </form>
+    <script src="booking.js"></script>
+</div>
+</body>
+</html>

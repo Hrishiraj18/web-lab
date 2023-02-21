@@ -1,0 +1,37 @@
+body{
+    background:linear-gradient(180deg, rgba(15, 18, 16, 0.4) 2%,rgba(11,223,44,0.7) 20%,rgba(84, 236, 244, 0.632) 30%, rgba(21, 76, 227, 0.632)40%,rgba(22, 17, 192, 0.432)60%);
+    color: wheat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.x
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-color:rgba(0,0,0,0.4);
+    border: 2px solid red;
+    gap:9px;
+    padding:30px;
+    
+}
+#submit
+{
+    width: fit-content;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding:10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: white;
+    color:black;
+    font-size: medium;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #button
+        {
+            background-color: black;
+            color:white;
+            padding: 10px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+        #button:hover
+        {
+            background-color:white;
+            color:black;
+            padding: 10px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            font-size: large;
+        }
+    </style>
+</head>
+<body id="body">
+    <form >
+        <div style="text-align: center; size:40px">
+        <h1><center>This button is used to change colors!!!</center></h1>
+        <input type="button" value="button"  id="button">
+    </div>
+    </form>
+    <script>
+        const button=document.getElementById("button");
+        const body=document.getElementById("body");
+        let clr=['green','blue','red','cadetblue','aliceblue','azure','gold','cromson','burylwood','gray','wheat','lavender']
+        button.addEventListener("click",()=>{
+            const r=Math.floor(Math.random()*clr.length)
+            body.style.background=clr[r];
+
+        });
+    </script>
+    
+</body>
+</html>

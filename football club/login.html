@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>  
+    <head>   
+        <link rel="stylesheet" href="abc1.css">
+        <title>  
+            FORMS
+        </title>  
+        <script>  
+          function validateform(){  
+          var name=document.myform.name.value;  
+          var phone=document.myform.phone.value;
+          var address=document.myform.address.value;
+          if (name==null || name==""){  
+            alert("Please enter a valid Name");  
+            return false;  
+          }
+          else if((document.getElementById("male").checked==false)&&(document.getElementById("female").checked==false)){
+            alert("please");
+            return false;
+          }
+          else if(address==''){
+            alert("Plese enter a valid address");
+            return false;
+          }
+          
+          else if(phone < 1000000000|| phone > 10000000000)
+          { 
+            alert("Please enter a valid phone number")
+            return false;
+          }
+          else if(document.getElementById('club').selectedIndex==0){
+            alert("Please select a CLUB");
+            return false;
+          }
+          else if(document.getElementById('location').selectedIndex==0){
+            alert("Please select a location for club")
+            return false;
+          }
+          else if(document.getElementById("check").checked==false){
+            alert("Please check the box");
+            return false;
+          }
+          
+          } 
+          function changeBodyimg(){
+        document.body.style.backgroundImage="url('cr7white.jpg')";
+    }
+    
+ 
+        </script>
+    </head>  
+    <body bgcolor="#CCCCFF">  
+    <br>  
+    <br> 
+    <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" > 
+        <div class="container">
+      <h1><center><font><u>REGISTRATION FORM</u></font></center></h1>
+      <h2><b>Please enter your details here</b></h2>
+      <hr size="5" color="white">
+    <label>NAME: </label>         
+    <input type="text" name="name" size="15"/> <br> <br> 
+    Address*:
+    <input type="text" name="address" size="15"/> <br> <br>  
+    Phone*:  
+    </label>  
+    <input type="text" name="phone" size="10"/> <br> <br>  
+
+    <label>   
+    CLUB :  
+    </label>   
+    <select id="club" name="club">  
+    <option value="CLUB">Club</option>  
+    <option value="REALMADRID"> REALMADRID</option>  
+    <option value="BARCELONAFC">BARCELONAFC</option> 
+    <option value="ABILBAO">ABILBAO</option>
+    </select>
+    <label>
+    LOCATION:
+    </label>
+    <select id="location" name="location">  
+      <option value="Location">location</option>  
+      <option value="MADRID">MADRID</option>  
+      <option value="BARCELONA">BARCELONA</option> 
+      <option value="BILBAO">BILBAO</option>
+      </select>
+      
+    <br>  
+    <br>
+    <label>Select: </label>
+    <input type="date" id="date" name="date"><br><br>
+    <label>Coach</label> 
+    <input type="checkbox" name="coach" id="check">
+    <br>
+    <br>
+    <label>   
+    Gender:  
+    </label><br>  
+    <input type="radio" name="gender" value="Male" id="male"> Male
+    <input type="radio" name="gender" value ="Female" id="female"> Female  
+    <input type="radio" name="gender" value ="Other" id="other"> Other  
+    <br>  
+    <br> 
+    <label>     
+    <button type="submit" class="registerbtn" onclick="changeBodyimg();">Register</button>   
+    </form>
+    <hr size="5" color="white">
+    </body>  
+    </html>

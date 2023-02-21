@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check()
+        {
+        var result=document.getElementById("result");
+        var form=document.getElementById("form");
+        var c=0;
+        var q1=document.forms.q1.value;
+        var q2=document.forms.q2.value;
+        var q3=document.forms.q3.value;
+        var q4=document.forms.q4.value;
+
+        if(q1=="A")
+        {c++}
+        if(q2=="B")
+        {c++}
+        if(q3=="C")
+        {c++}
+        if(q4=="D")
+        {c++}
+        forms.style.display="none";
+        result.textContent =c;
+        if(c==4)
+        {
+            result.textContent=`Your score is ${c}/4.Excellent`;
+        }
+        if(c=>1&&c<3)
+        {
+            result.textContent=`Your score is ${c}/4.Satisactory`;
+        }
+        if(c==3)
+        {
+            result.textContent=`Your score is ${c}/4.GOOD`;
+        }
+        if(c==0)
+        {
+            result.textContent=`Your score is ${c}/4.POOR`;
+        }
+        }
+    </script>
+</head>
+<body>
+    <form id="forms" name="forms">
+        <div>
+            <div>
+            <p>blah blah blahhhhh</p>
+            <input type="radio" name="q1" value="A">A
+            <input type="radio" name="q1" value="B">B
+            <input type="radio" name="q1" value="C">C
+            <input type="radio" name="q1" value="D">D
+        </div>
+        <div>
+            <p>placvhiigubvfbedvfjkegfbfbg</p>
+            <input type="radio" name="q2" value="A">A
+            <input type="radio" name="q2" value="B">B
+            <input type="radio" name="q2" value="C">C
+            <input type="radio" name="q2" value="D">D
+        </div>
+        <div>
+            <p>hoooooooooo</p>
+            <input type="radio" name="q3" value="A">A
+            <input type="radio" name="q3" value="B">B
+            <input type="radio" name="q3" value="C">C
+            <input type="radio" name="q3" value="D">D
+        </div>
+        <div>
+            <p>heeehhaaaaaaaaa</p>
+            <input type="radio" name="q4" value="A">A
+            <input type="radio" name="q4" value="B">B
+            <input type="radio" name="q4" value="C">C
+            <input type="radio" name="q4" value="D">D
+        </div>
+        <input type="button" value="Submit" onclick="check()">
+    </div>
+    </form>
+    <span id="result"></span>
+</body>
+</html>

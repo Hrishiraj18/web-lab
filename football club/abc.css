@@ -1,0 +1,84 @@
+  
+input[type=text], input[type=password]{  
+  width: 20%;  
+  padding: 5px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline:none;  
+}  
+ div {  
+  padding: 10px 0;  
+}  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 20%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+
+form
+{
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background: linear-gradient(180deg, rgba(103, 200, 235, 0.658) 4%, rgb(62, 96, 200) 53%, rgba(121, 98, 173, 0.978) 100%);
+  justify-content: center;
+  margin-top: 1%;
+  align-items: center;
+  background-image: url("cr7white.jpg");
+  background-size: cover;
+} 
+h2{
+  color:#8B0000;
+}
+h1{
+  color:crimson;
+}
+.portal{
+  background-color: beige;
+  color :cornflowerblue;
+  border-top:solid blue 4px;
+  border-left:solid blue 4px;
+  border-right:solid blue 4px;
+  border-bottom:solid red 4px;
+
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#table1{
+  background-color: #DDA0DD;
+  border-left:solid blue 4px;
+  border-bottom:solid blue 4px;
+  border-right:solid blue 4px;
+}
+.content {
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 95%;
+  padding: 20px;
+}
